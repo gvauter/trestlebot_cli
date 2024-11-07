@@ -14,13 +14,6 @@ CONTEXT_SETTINGS = dict(
 )
 
 
-click.group(
-    name="trestlebot",
-    context_settings=CONTEXT_SETTINGS,
-    epilog=EPILOG,
-)
-
-
 @click.group(
     name="trestlebot",
     context_settings=CONTEXT_SETTINGS,
@@ -30,7 +23,6 @@ click.group(
 @click.pass_context
 def root(ctx):
     """Root command"""
-    pass
 
 
 root.add_command(autosync_cmd)
