@@ -17,7 +17,6 @@ CONTEXT_SETTINGS = dict(
 click.group(
     name="trestlebot",
     context_settings=CONTEXT_SETTINGS,
-    options_metavar=None,
     epilog=EPILOG,
 )
 
